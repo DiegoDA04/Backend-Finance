@@ -7,14 +7,14 @@ import lombok.*;
 @With
 @AllArgsConstructor
 @NoArgsConstructor
-public class PaymentScheduleResource {
+public class PaymentSchedule {
     private Long n;
-    private Long tea;
-    private String tes;
+    private Double tea;
+    private Double tes;
     private String gracePeriod;
-    private String initialBalance;
-    private Long rate;
-    private Long fee;
-    private Long amortization;
-    private Long endingBalance;
+    private Double initialBalance;
+    private Double rate;
+    private Double fee;
+    private Double amortization;
+    private Double endingBalance;
 }

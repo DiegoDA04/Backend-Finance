@@ -1,2 +1,12 @@
-package pe.edu.group3.finance.backendfinance.shared.mapping;public class MappingConfiguration {
+package pe.edu.group3.finance.backendfinance.shared.mapping;
+
+import org.springframework.context.annotation.Bean;
+import org.springframework.context.annotation.Configuration;
+
+@Configuration("enhancedModelMapperConfiguration")
+public class MappingConfiguration {
+    @Bean
+    public EnhancedModelMapper modelMapper() {
+        return new EnhancedModelMapper();
+    }
 }
